@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<app-banner></app-banner>
+<app-product-list></app-product-list>
+
+
+<div class="products">
+  <div *ngFor="let product of products" class="card">
+    <img [src]="product.image" width="150">
+    <h3>{{product.name}}</h3>
+    <p>₹ {{product.price}}</p>
+  </div>
+</div>
